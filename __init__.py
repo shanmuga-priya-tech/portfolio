@@ -34,7 +34,7 @@ slug_to_project = {project["slug"]: project for project in projects}
 
 @app.route("/")
 def home():
-    return render_template("home.html",projects=projects)
+    return render_template("index.html",projects=projects)
 
 @app.route("/about")
 def about():
